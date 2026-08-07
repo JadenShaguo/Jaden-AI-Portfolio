@@ -809,6 +809,26 @@
   pointer-events: none !important;
 }
 
+#page-11 .mistakemate-video-column {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+#page-11 .mistakemate-video-column .mistakemate-video-card {
+  width: 100% !important;
+}
+
+#page-11 .mistakemate-video-load-hint {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
 #page-11 .mistakemate-video-card::before {
   content: "▶" !important;
   position: absolute !important;
@@ -1847,6 +1867,45 @@
   font-weight: 500 !important;
 }
 
+#page-1 .cover-main-wrapper {
+  position: relative !important;
+}
+
+#page-1 .cover-left-content,
+#page-1 .cover-right-card {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#page-1 .cover-right-card {
+  margin-top: 164px !important;
+}
+
+#page-1 .cover-portrait-wrap {
+  position: absolute !important;
+  left: 69.5% !important;
+  top: -92px !important;
+  width: 236px !important;
+  height: 306px !important;
+  border: 1px solid rgba(17, 17, 17, 0.08) !important;
+  border-radius: 20px !important;
+  background: #111111 !important;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18) !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  transform: rotate(10deg) !important;
+  transform-origin: center center !important;
+  z-index: 5 !important;
+}
+
+#page-1 .cover-portrait-wrap img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 18% !important;
+}
+
 .highlight,
 .slide strong,
 .portfolio-map-grid ul li strong,
@@ -2175,6 +2234,7 @@
       <p class="title-sub cover-desc">交易 / 策略 / AI 产品经理方向，专注 AI Agent 业务应用落地，致力于 AI + 业务领域创新的效率提升和价值实现。</p>
       <div class="cover-badges cover-pills-group"><span class="pill-item">所有项目均由我独立开发</span><span class="pill-item">面试与简历作品集</span><span class="pill-item">单文件 HTML</span></div>
     </div>
+    <div class="cover-portrait-wrap" aria-hidden="true"><img src="index-assets-extract/asset-12-jaden-portrait.jpg" alt=""></div>
     <div class="cover-panel cover-right-card">
       <b class="card-title">作品主线</b>
       <p class="card-text">从可外部体验的 AI 产品，到教育、数据、评测场景中的内部工作流系统，把 AI 从一次性对话推进到<span class="highlight">可体验、可验证、可复用</span>的产品闭环。</p>
@@ -2309,7 +2369,7 @@
   <div class="mistakemate-layout edit-unit">
     <div class="left-media-column mistakemate-media-column">
       <button class="media-card mistakemate-image-card map-shot" type="button" data-full="index-assets-extract/asset-08-616c5fe686.png"><img src="index-assets-extract/asset-08-616c5fe686.png" alt="MistakeMate 运行截图"><span class="media-badge">点击查看大图</span></button>
-      <div class="media-card video-card-wrapper mistakemate-video-card mistakemate-video-thumb" onclick="openMediaModal('video')" role="button" tabindex="0" data-video-src="index-assets-extract/asset-09-8d6edbe2fb.mp4"><video src="index-assets-extract/asset-09-8d6edbe2fb.mp4" poster="index-assets-extract/asset-10-6dde38c319.png" preload="metadata" muted playsinline style="width: 100%; height: 100%; object-fit: cover; pointer-events: none; border-radius: 12px;"></video><span class="media-badge">点击查看视频</span></div>
+      <div class="mistakemate-video-column"><div class="media-card video-card-wrapper mistakemate-video-card mistakemate-video-thumb" onclick="openMediaModal('video')" role="button" tabindex="0" data-video-src="index-assets-extract/asset-09-8d6edbe2fb.mp4"><video src="index-assets-extract/asset-09-8d6edbe2fb.mp4" poster="index-assets-extract/asset-10-6dde38c319.png" preload="metadata" muted playsinline style="width: 100%; height: 100%; object-fit: cover; pointer-events: none; border-radius: 12px;"></video><span class="media-badge">点击查看视频</span></div><div class="mistakemate-video-load-hint">受网络影响，加载需稍等</div></div>
     </div>
     <div class="right-content-column mistakemate-content-column">
       <div class="mistakemate-flow-card"><b>1. 错题记录</b><span>读取学生真实错题和本地题库数据，<span class="highlight">自动萃取题干、考点与答错归因</span>。</span></div>
