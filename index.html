@@ -53,6 +53,7 @@
   align-items: flex-start !important;
   justify-content: space-between !important;
   margin-top: 0 !important;
+  transform: translateY(-80px) !important;
   padding-bottom: 0 !important;
   width: 100% !important;
   min-height: 0 !important;
@@ -197,6 +198,26 @@
   border-color: #FF5722 !important;
   box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3) !important;
   transform: translateY(-1px) !important;
+}
+
+#page-7 .techprazzi-github-row {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 10px !important;
+  width: fit-content !important;
+}
+
+#page-7 .techprazzi-github-row .github-pill {
+  margin-top: 0 !important;
+}
+
+#page-7 .techprazzi-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
 }
 /* end page-7 techprazzi standard two-column layout */
 
@@ -395,6 +416,27 @@
   border-color: #FF5722 !important;
   box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3) !important;
   transform: translateY(-1px) !important;
+}
+
+#page-8 .deck-studio-github-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  margin: 28px auto 0 auto !important;
+  width: fit-content !important;
+}
+
+#page-8 .deck-studio-github-row .github-pill {
+  margin: 0 !important;
+}
+
+#page-8 .deck-studio-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
 }
 /* end page-8 html deck studio classic layout */
 
@@ -1532,17 +1574,21 @@
 
 #page-16,
 #page-16.thanks-slide {
+  display: none !important;
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  min-height: calc(100vh - 120px) !important;
-  padding: 40px 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 0 !important;
   box-sizing: border-box !important;
   text-align: center !important;
 }
 
 #page-16.thanks-slide.active {
   display: flex !important;
+  grid-template-rows: none !important;
 }
 
 #page-16 .thanks-hero-card {
@@ -2083,11 +2129,36 @@
   line-height: 1.65 !important;
 }
 
+#page-3 .method-head,
+#page-3 .page-header {
+  transform: translateY(20px) !important;
+}
+
+#page-3 .method-stage-card,
+#page-3 .method-card {
+  height: 390px !important;
+  min-height: 390px !important;
+}
+
+#page-3 .key-deliverable,
+#page-3 .output-box {
+  height: 82px !important;
+  min-height: 82px !important;
+  flex: 0 0 82px !important;
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
 #page-3 .output-box .output-text,
 #page-3 .output-text {
   color: var(--text-strong) !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
+  line-height: 1.45 !important;
 }
 
 #page-4 .product-structure-card b,
@@ -2103,6 +2174,26 @@
   font-weight: 500 !important;
   color: var(--text-main) !important;
   line-height: 1.65 !important;
+}
+
+#page-4 .sparkplay-github-row {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 2px !important;
+  width: fit-content !important;
+}
+
+#page-4 .sparkplay-github-row .github-pill-button {
+  margin-top: 0 !important;
+}
+
+#page-4 .sparkplay-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
 }
 
 #page-6 .campus-overview-card b,
@@ -2169,6 +2260,26 @@
   font-weight: 600 !important;
   line-height: 1.35 !important;
   text-align: center !important;
+}
+
+#page-6 .campus-github-row {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 4px !important;
+  width: fit-content !important;
+}
+
+#page-6 .campus-github-row .github-pill-button {
+  margin-top: 0 !important;
+}
+
+#page-6 .campus-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
 }
 
 #page-7 .techprazzi-card b {
@@ -2272,7 +2383,7 @@
   <div class="head sparkplay-head edit-unit"><div><div class="eyebrow slide-label-kicker">PUBLIC PRODUCT 01 / SPARKPLAY</div><h2>SparkPlay 灵感玩具盒：把一句想法变成可玩的互动内容</h2></div><p>面向内容创作者、营销创意团队和产品原型团队，把自然语言描述转化为可试玩、可 Remix、可保存版本并分享的移动端 playable。</p></div>
   <div class="sparkplay-product-layout edit-unit">
     <div class="sparkplay-preview-panel left-media-column preview-container-box"><img src="index-assets-extract/asset-01-e2f39325e2.svg" alt="SparkPlay 创作台截图"></div>
-    <div class="sparkplay-product-side right-content-column"><em>产品结构</em><div class="sparkplay-structure-list"><div class="sparkplay-story-card card-item product-structure-card"><b>从创意到试玩</b><span>输入玩法目标与视觉风格，<span class="highlight">一键生成移动端 Playable 并直接在手机框里即时试玩运行，践行可玩优先、可改优先、可传播优先，</span>压缩策划与开发环节，让创作者用自然语言快速将想法转化为可以真正体验的 Playable 互动资产。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从一次生成到资产</b><span><span class="highlight">对话式 Remix 自然语言修改，</span>结合手机框 Sandboxed iFrame 即时试玩，每次生成、修改、导入或回滚均形成不可变独立版本。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从自用到传播</b><span><span class="highlight">生成固定版本公网分享链接，支持受众免登录试玩与一键 Fork 分叉二创，</span>内置代码静态校验与网络拦截，确保公网分发安全。</span></div><a href="https://github.com/JadenShaguo/SparkPlay" target="_blank" class="github-pill-button">GitHub: JadenShaguo/SparkPlay</a></div></div>
+    <div class="sparkplay-product-side right-content-column"><em>产品结构</em><div class="sparkplay-structure-list"><div class="sparkplay-story-card card-item product-structure-card"><b>从创意到试玩</b><span>输入玩法目标与视觉风格，<span class="highlight">一键生成移动端 Playable 并直接在手机框里即时试玩运行，践行可玩优先、可改优先、可传播优先，</span>压缩策划与开发环节，让创作者用自然语言快速将想法转化为可以真正体验的 Playable 互动资产。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从一次生成到资产</b><span><span class="highlight">对话式 Remix 自然语言修改，</span>结合手机框 Sandboxed iFrame 即时试玩，每次生成、修改、导入或回滚均形成不可变独立版本。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从自用到传播</b><span><span class="highlight">生成固定版本公网分享链接，支持受众免登录试玩与一键 Fork 分叉二创，</span>内置代码静态校验与网络拦截，确保公网分发安全。</span></div><div class="sparkplay-github-row"><a href="https://github.com/JadenShaguo/SparkPlay" target="_blank" class="github-pill-button">GitHub: JadenShaguo/SparkPlay</a><span class="sparkplay-github-tip">点击查看作品</span></div></div></div>
   </div>
 </section>
 <section class="slide sparkplay-loop-slide" data-title="SparkPlay 闭环" data-note="这一页讲 SparkPlay 的产品闭环：从 prompt 到版本资产，中间加入校验、预览和 Remix，说明我关注的是完整使用链路。">
@@ -2285,7 +2396,7 @@
 <section id="page-6" class="slide campus-slide" data-title="Campus Food Map" data-note="Campus Food Map 展示的是场景化产品设计能力：同样是找餐馆，但面向学生时，距离、优惠、拥挤、学习场景和当下情绪都成为重要变量。">
   <div class="progress"><span></span></div>
   <div class="head campus-title-head edit-unit"><div><div class="eyebrow slide-label-kicker">PUBLIC PRODUCT 02 / CAMPUS FOOD MAP</div><h2>Campus Food Map：把校园附近每一餐变成更确定的选择</h2></div><p class="campus-quote top-quote-box">面向高校学生的地图化、场景化美食发现产品，围绕学校、距离、评分、拥挤度、学生优惠和状态推荐做轻决策。</p></div>
-  <div class="campus-two-column-layout edit-unit"><div class="left-media-column"><button class="campus-image-card map-shot" type="button" data-full="index-assets-extract/asset-03-01279854bd.svg"><img src="index-assets-extract/asset-03-01279854bd.svg" alt="Campus Food Map 地图界面截图"></button><div class="campus-video-column"><div class="campus-video-card campus-demo-video campus-video-thumb" role="button" tabindex="0" aria-label="点击查看 Campus Food Map 视频演示"><video src="index-assets-extract/asset-04-20ab9408cb.mp4" loop muted playsinline preload="metadata" controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></video></div><div class="campus-video-load-hint">受网络影响，加载需稍等</div></div></div><div class="right-content-column"><em class="campus-section-label campus-overview-label">产品概述与核心理念</em><div class="campus-overview-card"><span>大学城美食地图是一款面向高校学生的地图化、场景化美食发现与轻决策产品。围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航</span>等真实校园生活场景，将地图圈选、路线计算、拥挤度、<span style="color: #FF5722; font-weight: 600;">学生优惠与 AI 智能推荐</span>整合在单页应用中；践行“<span style="color: #FF5722; font-weight: 600;">让校园生活里的高频小决策，变得更轻、更准、更有人情味</span>”的核心理念，彻底降低跨上下文跳转与选择成本。</span></div><em>产品场景</em><div class="campus-scene-card"><b>空间关系先行</b><span><span style="color: #FF5722; font-weight: 600;">地图直接展示学校周边商户、距离圈和路线入口</span>，直观呈现空间分布与步行距离，大幅缩短找店决策路径。</span></div><div class="campus-scene-card"><b>校园语境过滤</b><span>围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航、预算与学生优惠</span>等真实高校需求构建筛选矩阵，精准匹配当下就餐语境。</span></div><div class="campus-scene-card"><b>轻量推荐入口</b><span>集成<span style="color: #FF5722; font-weight: 600;">AI 助手对话、心情推荐与随机抽签</span>模式，提供趣味化轻推荐，彻底帮助用户摆脱选择困难。</span></div><a href="https://github.com/JadenShaguo/Campus-Food-Map" target="_blank" class="github-pill-button">GitHub: JadenShaguo/Campus-Food-Map</a></div></div>
+  <div class="campus-two-column-layout edit-unit"><div class="left-media-column"><button class="campus-image-card map-shot" type="button" data-full="index-assets-extract/asset-03-01279854bd.svg"><img src="index-assets-extract/asset-03-01279854bd.svg" alt="Campus Food Map 地图界面截图"></button><div class="campus-video-column"><div class="campus-video-card campus-demo-video campus-video-thumb" role="button" tabindex="0" aria-label="点击查看 Campus Food Map 视频演示"><video src="index-assets-extract/asset-04-20ab9408cb.mp4" loop muted playsinline preload="metadata" controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></video></div><div class="campus-video-load-hint">受网络影响，加载需稍等</div></div></div><div class="right-content-column"><em class="campus-section-label campus-overview-label">产品概述与核心理念</em><div class="campus-overview-card"><span>大学城美食地图是一款面向高校学生的地图化、场景化美食发现与轻决策产品。围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航</span>等真实校园生活场景，将地图圈选、路线计算、拥挤度、<span style="color: #FF5722; font-weight: 600;">学生优惠与 AI 智能推荐</span>整合在单页应用中；践行“<span style="color: #FF5722; font-weight: 600;">让校园生活里的高频小决策，变得更轻、更准、更有人情味</span>”的核心理念，彻底降低跨上下文跳转与选择成本。</span></div><em>产品场景</em><div class="campus-scene-card"><b>空间关系先行</b><span><span style="color: #FF5722; font-weight: 600;">地图直接展示学校周边商户、距离圈和路线入口</span>，直观呈现空间分布与步行距离，大幅缩短找店决策路径。</span></div><div class="campus-scene-card"><b>校园语境过滤</b><span>围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航、预算与学生优惠</span>等真实高校需求构建筛选矩阵，精准匹配当下就餐语境。</span></div><div class="campus-scene-card"><b>轻量推荐入口</b><span>集成<span style="color: #FF5722; font-weight: 600;">AI 助手对话、心情推荐与随机抽签</span>模式，提供趣味化轻推荐，彻底帮助用户摆脱选择困难。</span></div><div class="campus-github-row"><a href="https://github.com/JadenShaguo/Campus-Food-Map" target="_blank" class="github-pill-button">GitHub: JadenShaguo/Campus-Food-Map</a><span class="campus-github-tip">点击查看作品</span></div></div></div>
 </section>
 <section id="page-7" class="slide techprazzi-slide" data-title="TechPrazzi" data-note="TechPrazzi 展示信息产品与 AI Agent 情报流能力：它把公开博客、播客、X 动态和产品发布整理成可订阅、可评分、可个性化的摘要，让用户少看二手噪音，多看一手信号。">
   <div class="progress"><span></span></div>
@@ -2299,7 +2410,7 @@
       <div class="techprazzi-card"><b>处理流程</b><span class="card-desc">中心化 Feed 每日更新，Agent 拉取 Feed 后计算 <span style="color: #FF5722; font-weight: 600;">signalScore、signalTags、signalReasons 与 signalRadar</span>。</span></div>
       <div class="techprazzi-card"><b>摘要结构</b><span class="card-desc">用 <span style="color: #FF5722; font-weight: 600;">TL;DR、SIGNAL HUNT、Why it matters、WATCH NEXT</span> 分层呈现结论、证据和后续方向。</span></div>
       <div class="techprazzi-card"><b>推送形式与项目价值</b><span class="card-desc">按 agents、developer tools、infrastructure 等兴趣画像重排重点；<span style="color: #FF5722; font-weight: 600;">轻量通讯风格输出，保留原始链接与可追溯判断</span>。</span></div>
-      <div class="github-pill">GitHub: JadenShaguo/techprazzi</div>
+      <div class="techprazzi-github-row"><div class="github-pill">GitHub: JadenShaguo/techprazzi</div><span class="techprazzi-github-tip">点击查看作品</span></div>
     </div>
   </div>
 </section>
@@ -2328,7 +2439,7 @@
       <div class="deck-feature-card"><b>可保存</b><span>轻量 <span class="highlight">Python 服务</span>把浏览器编辑结果原子写入源码文件。</span></div>
       <div class="deck-feature-card"><b>可验收</b><span>检查控件、资源、<span class="highlight">viewBox、页面元数据</span>和自包含性。</span></div>
     </div>
-    <div class="github-pill">GitHub: JadenShaguo/html-deck-studio</div>
+    <div class="deck-studio-github-row"><div class="github-pill">GitHub: JadenShaguo/html-deck-studio</div><span class="deck-studio-github-tip">点击查看作品</span></div>
   </div>
 
 </section>
