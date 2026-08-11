@@ -4,3 +4,6 @@
 !index.html
 !assets/
 !assets/**
+!index-assets-extract/
+!index-assets-extract/**
+**/.DS_Store

@@ -53,6 +53,7 @@
   align-items: flex-start !important;
   justify-content: space-between !important;
   margin-top: 0 !important;
+  transform: translateY(-80px) !important;
   padding-bottom: 0 !important;
   width: 100% !important;
   min-height: 0 !important;
@@ -198,6 +199,26 @@
   box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3) !important;
   transform: translateY(-1px) !important;
 }
+
+#page-7 .techprazzi-github-row {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 10px !important;
+  width: fit-content !important;
+}
+
+#page-7 .techprazzi-github-row .github-pill {
+  margin-top: 0 !important;
+}
+
+#page-7 .techprazzi-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
+}
 /* end page-7 techprazzi standard two-column layout */
 
 
@@ -235,7 +256,7 @@
   flex-direction: column !important;
   gap: 0 !important;
   width: 100% !important;
-  margin-top: 0 !important;
+  margin-top: 10px !important;
 }
 
 #page-8 .deck-flow-row {
@@ -308,7 +329,7 @@
 
 #page-8 .deck-studio-center-note {
   width: 82% !important;
-  margin: 28px auto 0 auto !important;
+  margin: 33px auto 0 auto !important;
   background: #EEF7F2 !important;
   border: 1px solid #C8E6D5 !important;
   padding: 12px 24px !important;
@@ -338,7 +359,7 @@
 #page-8 .deck-feature-row {
   display: flex !important;
   gap: 12px !important;
-  margin-top: 24px !important;
+  margin-top: 29px !important;
   width: 100% !important;
 }
 
@@ -395,6 +416,27 @@
   border-color: #FF5722 !important;
   box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3) !important;
   transform: translateY(-1px) !important;
+}
+
+#page-8 .deck-studio-github-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  margin: 28px auto 0 auto !important;
+  width: fit-content !important;
+}
+
+#page-8 .deck-studio-github-row .github-pill {
+  margin: 0 !important;
+}
+
+#page-8 .deck-studio-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
 }
 /* end page-8 html deck studio classic layout */
 
@@ -610,6 +652,26 @@
   pointer-events: none !important;
 }
 
+#page-10 .workbench-video-column {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+#page-10 .workbench-video-column .workbench-video-card {
+  width: 100% !important;
+}
+
+#page-10 .workbench-video-load-hint {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
 #page-10 .media-badge {
   position: absolute !important;
   right: 12px !important;
@@ -789,6 +851,26 @@
   pointer-events: none !important;
 }
 
+#page-11 .mistakemate-video-column {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+#page-11 .mistakemate-video-column .mistakemate-video-card {
+  width: 100% !important;
+}
+
+#page-11 .mistakemate-video-load-hint {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
 #page-11 .mistakemate-video-card::before {
   content: "▶" !important;
   position: absolute !important;
@@ -922,6 +1004,7 @@
   flex-direction: column !important;
   gap: 12px !important;
   min-width: 0 !important;
+  transform: translateY(-25px) !important;
 }
 
 #page-12 .sql-flow-panel {
@@ -1292,7 +1375,8 @@
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 16px !important;
-  margin-top: 20px !important;
+  align-items: start !important;
+  margin-top: 65px !important;
   width: 100% !important;
 }
 
@@ -1301,12 +1385,15 @@
   border: 1px solid #EAEAEA !important;
   border-left: 3.5px solid #FF5722 !important;
   border-radius: 14px !important;
-  padding: 22px 20px !important;
-  min-height: 320px !important;
+  padding: 18px 20px !important;
+  min-height: 245px !important;
+  height: 245px !important;
+  align-self: start !important;
+  position: relative !important;
   box-sizing: border-box !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between !important;
+  justify-content: flex-start !important;
 }
 
 #page-14 .strategy-public {
@@ -1369,11 +1456,15 @@
 }
 
 #page-14 .strategy-desc {
+  position: absolute !important;
+  left: 20px !important;
+  right: 20px !important;
+  bottom: 10px !important;
   color: #333333 !important;
   font-size: 13.5px !important;
   font-weight: 500 !important;
   line-height: 1.65 !important;
-  margin: 18px 0 0 0 !important;
+  margin: 0 !important;
 }
 
 #page-14 .open-boundary-claim {
@@ -1426,11 +1517,12 @@
 }
 
 #page-15 .summary-card {
+  position: relative !important;
   background: #F8F9FA !important;
   border: 1px solid #EAEAEA !important;
   border-left: 4px solid #FF5722 !important;
   border-radius: 14px !important;
-  padding: 22px 24px !important;
+  padding: 22px 24px 112px 24px !important;
   min-height: 200px !important;
   box-sizing: border-box !important;
   display: flex !important;
@@ -1458,11 +1550,21 @@
 }
 
 #page-15 .project-map {
-  margin-top: 12px !important;
+  position: absolute !important;
+  left: 24px !important;
+  right: 24px !important;
+  bottom: 60px !important;
+  margin: 0 !important;
+  min-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
   font-size: 12.5px !important;
   font-weight: 700 !important;
   color: #888888 !important;
   line-height: 1.45 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 #page-15 .highlight,
@@ -1492,17 +1594,21 @@
 
 #page-16,
 #page-16.thanks-slide {
+  display: none !important;
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  min-height: calc(100vh - 120px) !important;
-  padding: 40px 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 0 !important;
   box-sizing: border-box !important;
   text-align: center !important;
 }
 
 #page-16.thanks-slide.active {
   display: flex !important;
+  grid-template-rows: none !important;
 }
 
 #page-16 .thanks-hero-card {
@@ -1827,6 +1933,45 @@
   font-weight: 500 !important;
 }
 
+#page-1 .cover-main-wrapper {
+  position: relative !important;
+}
+
+#page-1 .cover-left-content,
+#page-1 .cover-right-card {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#page-1 .cover-right-card {
+  margin-top: 164px !important;
+}
+
+#page-1 .cover-portrait-wrap {
+  position: absolute !important;
+  left: 69.5% !important;
+  top: -92px !important;
+  width: 236px !important;
+  height: 306px !important;
+  border: 1px solid rgba(17, 17, 17, 0.08) !important;
+  border-radius: 20px !important;
+  background: #111111 !important;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18) !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  transform: rotate(10deg) !important;
+  transform-origin: center center !important;
+  z-index: 5 !important;
+}
+
+#page-1 .cover-portrait-wrap img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 18% !important;
+}
+
 .highlight,
 .slide strong,
 .portfolio-map-grid ul li strong,
@@ -1934,6 +2079,27 @@
   color: var(--text-muted) !important;
 }
 
+.sparkplay-loop-slide .sparkplay-video-column {
+  width: 37% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex: 0 0 37% !important;
+}
+
+.sparkplay-loop-slide .sparkplay-video-column .video-wrapper {
+  width: 100% !important;
+}
+
+.sparkplay-loop-slide .video-load-hint {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
 /* global typography specificity fixes */
 #page-1 .cover-pills-group .pill-item {
   font-size: 14px !important;
@@ -1983,11 +2149,36 @@
   line-height: 1.65 !important;
 }
 
+#page-3 .method-head,
+#page-3 .page-header {
+  transform: translateY(20px) !important;
+}
+
+#page-3 .method-stage-card,
+#page-3 .method-card {
+  height: 390px !important;
+  min-height: 390px !important;
+}
+
+#page-3 .key-deliverable,
+#page-3 .output-box {
+  height: 82px !important;
+  min-height: 82px !important;
+  flex: 0 0 82px !important;
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
 #page-3 .output-box .output-text,
 #page-3 .output-text {
   color: var(--text-strong) !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
+  line-height: 1.45 !important;
 }
 
 #page-4 .product-structure-card b,
@@ -2003,6 +2194,26 @@
   font-weight: 500 !important;
   color: var(--text-main) !important;
   line-height: 1.65 !important;
+}
+
+#page-4 .sparkplay-github-row {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 2px !important;
+  width: fit-content !important;
+}
+
+#page-4 .sparkplay-github-row .github-pill-button {
+  margin-top: 0 !important;
+}
+
+#page-4 .sparkplay-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
 }
 
 #page-6 .campus-overview-card b,
@@ -2051,6 +2262,46 @@
   margin: 2px 0 0 !important;
 }
 
+#page-6 .campus-video-column {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+#page-6 .campus-video-column .campus-video-card {
+  width: 100% !important;
+}
+
+#page-6 .campus-video-load-hint {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
+#page-6 .campus-github-row {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 4px !important;
+  width: fit-content !important;
+}
+
+#page-6 .campus-github-row .github-pill-button {
+  margin-top: 0 !important;
+}
+
+#page-6 .campus-github-tip {
+  color: var(--text-soft) !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
+}
+
 #page-7 .techprazzi-card b {
   font-size: 16px !important;
   font-weight: 800 !important;
@@ -2090,6 +2341,34 @@
   line-height: 1.65 !important;
 }
 
+/* page 8 final position tuning */
+#page-8 .html-deck-studio-head {
+  transform: translateY(5px) !important;
+}
+
+#page-8 .deck-studio {
+  margin-top: 10px !important;
+  transform: none !important;
+}
+
+#page-8 .deck-studio-center-note {
+  margin: 33px auto 0 auto !important;
+}
+
+#page-8 .deck-feature-row {
+  margin-top: 29px !important;
+}
+
+/* selected page header position tuning */
+#page-9 .education-line-head,
+#page-10 .ai-workbench-head,
+#page-12 .sql-assistant-head,
+#page-13 .auto-evaluation-head,
+#page-14 .open-boundary-head,
+#page-15 .capability-summary-head {
+  transform: translateY(15px) !important;
+}
+
 </style>
 </head>
 <body>
@@ -2114,6 +2393,7 @@
       <p class="title-sub cover-desc">交易 / 策略 / AI 产品经理方向，专注 AI Agent 业务应用落地，致力于 AI + 业务领域创新的效率提升和价值实现。</p>
       <div class="cover-badges cover-pills-group"><span class="pill-item">所有项目均由我独立开发</span><span class="pill-item">面试与简历作品集</span><span class="pill-item">单文件 HTML</span></div>
     </div>
+    <div class="cover-portrait-wrap" aria-hidden="true"><img src="index-assets-extract/asset-12-jaden-portrait.jpg" alt=""></div>
     <div class="cover-panel cover-right-card">
       <b class="card-title">作品主线</b>
       <p class="card-text">从可外部体验的 AI 产品，到教育、数据、评测场景中的内部工作流系统，把 AI 从一次性对话推进到<span class="highlight">可体验、可验证、可复用</span>的产品闭环。</p>
@@ -2126,7 +2406,7 @@
   <div class="progress"><span></span></div>
   <div class="head page-header edit-unit"><div><div class="eyebrow slide-label-kicker">PORTFOLIO MAP</div><h2>这不是项目堆砌，而是两类 AI 落地路径</h2></div><p class="header-text-box">公开项目用于展示可体验产品能力；内部项目用于展示把 AI 接入真实业务流程、教学流程和批处理流程的能力。</p></div>
   <div class="portfolio-map portfolio-map-grid portfolio-grid-container edit-unit">
-    <article class="portfolio-card card-item"><div class="card-top"><div><h3 class="card-title">SparkPlay</h3><p class="card-subtitle">AI 互动小游戏 &amp; Playable 创作平台</p></div><span class="status public tag-public">可公开体验</span></div><p class="idea summary-banner">让互动内容像图文一样易于创作、对话 Remix 与公开传播</p><ul class="highlights"><li><strong>零代码</strong>生成移动端 <strong>Playable</strong> 互动小游戏</li><li><strong>自然语言对话式 Remix</strong> 与无损版本回滚机制</li><li>独立 <strong>Sandboxed iFrame</strong> 实时安全沙盒预览</li></ul><div class="tags card-bottom-pills"><span class="pill">一句话生成</span><span class="pill">对话式Remix</span><span class="pill">沙盒预览</span><span class="pill">版本分叉</span></div></article>
+    <article class="portfolio-card card-item"><div class="card-top"><div><h3 class="card-title">SparkPlay 灵感玩具盒</h3><p class="card-subtitle">AI 互动小游戏 &amp; Playable 创作平台</p></div><span class="status public tag-public">可公开体验</span></div><p class="idea summary-banner">让互动内容像图文一样易于创作、对话 Remix 与公开传播</p><ul class="highlights"><li><strong>零代码</strong>生成移动端 <strong>Playable</strong> 互动小游戏</li><li><strong>自然语言对话式 Remix</strong> 与无损版本回滚机制</li><li>独立 <strong>Sandboxed iFrame</strong> 实时安全沙盒预览</li></ul><div class="tags card-bottom-pills"><span class="pill">一句话生成</span><span class="pill">对话式Remix</span><span class="pill">沙盒预览</span><span class="pill">版本分叉</span></div></article>
     <article class="portfolio-card card-item"><div class="card-top"><div><h3 class="card-title">Campus Food Map</h3><p class="card-subtitle">面向高校学生的地图化、场景化轻决策美食推荐平台</p></div><span class="status public tag-public">可公开体验</span></div><p class="idea summary-banner">把校园高频用餐决策转化为离校距离、场景与 AI 状态的确定选择</p><ul class="highlights"><li>围绕多高校校区展示附近商户与<strong>空间交互地图</strong></li><li>覆盖<strong>考试周/聚餐/深夜</strong>等真实校园场景语境过滤</li><li>集成 <strong>AI 助手、心情推荐</strong> 与随机决策轻互动</li></ul><div class="tags card-bottom-pills"><span class="pill">地图场景检索</span><span class="pill">AI心情推荐</span><span class="pill">校园语境过滤</span><span class="pill">单页全栈</span></div></article>
     <article class="portfolio-card card-item"><div class="card-top"><div><h3 class="card-title">AI 教学工作台 MVP</h3><p class="card-subtitle">面向错题诊断、分步讲解与练判闭环的本地教学辅助工作台</p></div><span class="status internal tag-internal">内部工作流项目</span></div><p class="idea summary-banner">先诊断再讲解，把 AI 模型输出约束为可解析、可执行的教学动作流</p><ul class="highlights"><li>按学员汇总<strong>错题画像</strong>、薄弱知识点与高频题型</li><li>结合模型生成<strong>流式教学动作</strong>与独立 TTS 语音播报</li><li>本地 <strong>CSV/SQLite</strong> 稳定索引底座，结合 <strong>Langfuse</strong> 链路追踪</li></ul><div class="tags card-bottom-pills"><span class="pill">错题画像</span><span class="pill">教学动作流</span><span class="pill">双网关(LLM/TTS)</span><span class="pill">Langfuse追踪</span></div></article>
     <article class="portfolio-card card-item"><div class="card-top"><div><h3 class="card-title">SQL 助手 / Auto-evaluation</h3><p class="card-subtitle">数据表元数据预体检工具与 LLM 批量评测自动化工作流</p></div><span class="status internal tag-internal">内部工作流项目</span></div><p class="idea summary-banner">先体检再写 SQL，把“读表-调 Workflow-回写结果”提炼为稳定生产线</p><ul class="highlights"><li>自动读取表结构并生成<strong>元数据预体检</strong>报告与 SQL 包</li><li>支持 <strong>Precheck / Trial / Batch</strong> 三段式自动化评测流程</li><li>集成 <strong>Dify/Mify Workflow</strong>，自动追写指标与 <strong>SQLite</strong> 缓存</li></ul><div class="tags card-bottom-pills"><span class="pill">元数据预体检</span><span class="pill">Dify流水线</span><span class="pill">SQLite缓存</span><span class="pill">三段式执行</span></div></article>
@@ -2150,35 +2430,35 @@
   <div class="progress"><span></span></div>
   <div class="head sparkplay-head edit-unit"><div><div class="eyebrow slide-label-kicker">PUBLIC PRODUCT 01 / SPARKPLAY</div><h2>SparkPlay 灵感玩具盒：把一句想法变成可玩的互动内容</h2></div><p>面向内容创作者、营销创意团队和产品原型团队，把自然语言描述转化为可试玩、可 Remix、可保存版本并分享的移动端 playable。</p></div>
   <div class="sparkplay-product-layout edit-unit">
-    <div class="sparkplay-preview-panel left-media-column preview-container-box"><img src="assets/media-01-d07f771d9049fb96.svg" alt="SparkPlay 创作台截图"></div>
-    <div class="sparkplay-product-side right-content-column"><em>产品结构</em><div class="sparkplay-structure-list"><div class="sparkplay-story-card card-item product-structure-card"><b>从创意到试玩</b><span>输入玩法目标与视觉风格，<span class="highlight">一键生成移动端 Playable 并直接在手机框里即时试玩运行，践行可玩优先、可改优先、可传播优先，</span>压缩策划与开发环节，让创作者用自然语言快速将想法转化为可以真正体验的 Playable 互动资产。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从一次生成到资产</b><span><span class="highlight">对话式 Remix 自然语言修改，</span>结合手机框 Sandboxed iFrame 即时试玩，每次生成、修改、导入或回滚均形成不可变独立版本。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从自用到传播</b><span><span class="highlight">生成固定版本公网分享链接，支持受众免登录试玩与一键 Fork 分叉二创，</span>内置代码静态校验与网络拦截，确保公网分发安全。</span></div><a href="https://github.com/JadenShaguo/SparkPlay" target="_blank" class="github-pill-button">GitHub: JadenShaguo/SparkPlay</a></div></div>
+    <div class="sparkplay-preview-panel left-media-column preview-container-box"><img src="index-assets-extract/asset-01-e2f39325e2.svg" alt="SparkPlay 创作台截图"></div>
+    <div class="sparkplay-product-side right-content-column"><em>产品结构</em><div class="sparkplay-structure-list"><div class="sparkplay-story-card card-item product-structure-card"><b>从创意到试玩</b><span>输入玩法目标与视觉风格，<span class="highlight">一键生成移动端 Playable 并直接在手机框里即时试玩运行，践行可玩优先、可改优先、可传播优先，</span>压缩策划与开发环节，让创作者用自然语言快速将想法转化为可以真正体验的 Playable 互动资产。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从一次生成到资产</b><span><span class="highlight">对话式 Remix 自然语言修改，</span>结合手机框 Sandboxed iFrame 即时试玩，每次生成、修改、导入或回滚均形成不可变独立版本。</span></div><div class="sparkplay-story-card card-item product-structure-card"><b>从自用到传播</b><span><span class="highlight">生成固定版本公网分享链接，支持受众免登录试玩与一键 Fork 分叉二创，</span>内置代码静态校验与网络拦截，确保公网分发安全。</span></div><div class="sparkplay-github-row"><a href="https://github.com/JadenShaguo/SparkPlay" target="_blank" class="github-pill-button">GitHub: JadenShaguo/SparkPlay</a><span class="sparkplay-github-tip">点击查看作品</span></div></div></div>
   </div>
 </section>
 <section class="slide sparkplay-loop-slide" data-title="SparkPlay 闭环" data-note="这一页讲 SparkPlay 的产品闭环：从 prompt 到版本资产，中间加入校验、预览和 Remix，说明我关注的是完整使用链路。">
   <div class="progress"><span></span></div>
   <div class="head sparkplay-loop-head edit-unit"><div><div class="eyebrow slide-label-kicker">PRODUCT LOOP / SPARKPLAY 闭环</div><h2>SparkPlay 的关键不是生成，而是让生成结果可继续生长</h2></div><p>我把 playable 做成一个带版本、预览、安全校验和分享能力的创作工作台，让 AI 输出进入产品资产生命周期。</p></div>
-  <div class="sparkplay-loop-top edit-unit"><div class="video-wrapper sparkplay-video-thumb" role="button" tabindex="0" aria-label="点击放大播放 SparkPlay 视频"><video src="assets/media-02-4792b17addf7a49e.mp4" loop muted playsinline preload="metadata" controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></video></div><div class="video-desc-box"><div class="title">视频演示：生成后的 playable 进入试玩与 Remix 工作台</div><ul><li><b>极速试玩：</b>在 <span class="loop-highlight">Sandboxed 手机框</span>中直接加载与<span class="loop-highlight">交互体验</span></li><li><b>对话修改：</b>自然语言驱动 <span class="loop-highlight">Prompt 无损二次迭代（Remix）</span></li><li><b>资产沉淀：</b>生成固定版本链接，支持<span class="loop-highlight">免登录分发与 Fork 分叉</span></li></ul></div></div>
+  <div class="sparkplay-loop-top edit-unit"><div class="sparkplay-video-column"><div class="video-wrapper sparkplay-video-thumb" role="button" tabindex="0" aria-label="点击放大播放 SparkPlay 视频"><video src="index-assets-extract/asset-02-a6265163ef.mp4" loop muted playsinline preload="metadata" controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></video></div><div class="video-load-hint">网络影响，加载需稍等</div></div><div class="video-desc-box"><div class="title">视频演示：生成后的 playable 进入试玩与 Remix 工作台</div><ul><li><b>极速试玩：</b>在 <span class="loop-highlight">Sandboxed 手机框</span>中直接加载与<span class="loop-highlight">交互体验</span></li><li><b>对话修改：</b>自然语言驱动 <span class="loop-highlight">Prompt 无损二次迭代（Remix）</span></li><li><b>资产沉淀：</b>生成固定版本链接，支持<span class="loop-highlight">免登录分发与 Fork 分叉</span></li></ul></div></div>
   <div class="workflow-outer-card edit-unit"><div class="workflow-nodes-container"><div class="node-card"><b class="node-title">Prompt</b><span class="node-desc">玩法、目标、风格</span></div><span class="node-arrow">→</span><div class="node-card"><b class="node-title">Generator</b><span class="node-desc">模型与内置生成器</span></div><span class="node-arrow">→</span><div class="node-card"><b class="node-title">Validation</b><span class="node-desc">静态校验与网络阻断</span></div><span class="node-arrow">→</span><div class="node-card"><b class="node-title">Preview</b><span class="node-desc">Sandboxed 手机框试玩</span></div><span class="node-arrow">→</span><div class="node-card"><b class="node-title">Version</b><span class="node-desc">不可变版本与分享</span></div></div><div class="loop-capsule-wrapper"><span class="loop-capsule-tag">Remix / Regenerate / Import / Rollback 循环创建新版本</span><svg class="loop-arc-svg" viewBox="0 0 800 60" style="width: 100%; height: 50px; display: block; margin-top: 8px;" aria-hidden="true"><defs><marker id="sparkplay-loop-arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FF5722"/></marker></defs><path d="M 720,10 Q 400,55 80,10" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#sparkplay-loop-arrowhead)"/></svg></div></div>
   <div class="product-judgment-bar edit-unit"><p>产品判断：AI 生成只是入口，<span class="highlight">预览、校验、版本和分享</span>才让内容从 Demo 变成可复用资产。</p></div>
 </section>
 <section id="page-6" class="slide campus-slide" data-title="Campus Food Map" data-note="Campus Food Map 展示的是场景化产品设计能力：同样是找餐馆，但面向学生时，距离、优惠、拥挤、学习场景和当下情绪都成为重要变量。">
   <div class="progress"><span></span></div>
   <div class="head campus-title-head edit-unit"><div><div class="eyebrow slide-label-kicker">PUBLIC PRODUCT 02 / CAMPUS FOOD MAP</div><h2>Campus Food Map：把校园附近每一餐变成更确定的选择</h2></div><p class="campus-quote top-quote-box">面向高校学生的地图化、场景化美食发现产品，围绕学校、距离、评分、拥挤度、学生优惠和状态推荐做轻决策。</p></div>
-  <div class="campus-two-column-layout edit-unit"><div class="left-media-column"><button class="campus-image-card map-shot" type="button" data-full="assets/media-03-9ded217b0460663d.svg"><img src="assets/media-03-9ded217b0460663d.svg" alt="Campus Food Map 地图界面截图"></button><div class="campus-video-card campus-demo-video campus-video-thumb" role="button" tabindex="0" aria-label="点击查看 Campus Food Map 视频演示"><video src="assets/media-04-f979f5d67e0279c0.mp4" loop muted playsinline preload="metadata" controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></video></div></div><div class="right-content-column"><em class="campus-section-label campus-overview-label">产品概述与核心理念</em><div class="campus-overview-card"><span>大学城美食地图是一款面向高校学生的地图化、场景化美食发现与轻决策产品。围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航</span>等真实校园生活场景，将地图圈选、路线计算、拥挤度、<span style="color: #FF5722; font-weight: 600;">学生优惠与 AI 智能推荐</span>整合在单页应用中；践行“<span style="color: #FF5722; font-weight: 600;">让校园生活里的高频小决策，变得更轻、更准、更有人情味</span>”的核心理念，彻底降低跨上下文跳转与选择成本。</span></div><em>产品场景</em><div class="campus-scene-card"><b>空间关系先行</b><span><span style="color: #FF5722; font-weight: 600;">地图直接展示学校周边商户、距离圈和路线入口</span>，直观呈现空间分布与步行距离，大幅缩短找店决策路径。</span></div><div class="campus-scene-card"><b>校园语境过滤</b><span>围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航、预算与学生优惠</span>等真实高校需求构建筛选矩阵，精准匹配当下就餐语境。</span></div><div class="campus-scene-card"><b>轻量推荐入口</b><span>集成<span style="color: #FF5722; font-weight: 600;">AI 助手对话、心情推荐与随机抽签</span>模式，提供趣味化轻推荐，彻底帮助用户摆脱选择困难。</span></div><a href="https://github.com/JadenShaguo/Campus-Food-Map" target="_blank" class="github-pill-button">GitHub: JadenShaguo/Campus-Food-Map</a></div></div>
+  <div class="campus-two-column-layout edit-unit"><div class="left-media-column"><button class="campus-image-card map-shot" type="button" data-full="index-assets-extract/asset-03-01279854bd.svg"><img src="index-assets-extract/asset-03-01279854bd.svg" alt="Campus Food Map 地图界面截图"></button><div class="campus-video-column"><div class="campus-video-card campus-demo-video campus-video-thumb" role="button" tabindex="0" aria-label="点击查看 Campus Food Map 视频演示"><video src="index-assets-extract/asset-04-20ab9408cb.mp4" loop muted playsinline preload="metadata" controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;"></video></div><div class="campus-video-load-hint">受网络影响，加载需稍等</div></div></div><div class="right-content-column"><em class="campus-section-label campus-overview-label">产品概述与核心理念</em><div class="campus-overview-card"><span>大学城美食地图是一款面向高校学生的地图化、场景化美食发现与轻决策产品。围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航</span>等真实校园生活场景，将地图圈选、路线计算、拥挤度、<span style="color: #FF5722; font-weight: 600;">学生优惠与 AI 智能推荐</span>整合在单页应用中；践行“<span style="color: #FF5722; font-weight: 600;">让校园生活里的高频小决策，变得更轻、更准、更有人情味</span>”的核心理念，彻底降低跨上下文跳转与选择成本。</span></div><em>产品场景</em><div class="campus-scene-card"><b>空间关系先行</b><span><span style="color: #FF5722; font-weight: 600;">地图直接展示学校周边商户、距离圈和路线入口</span>，直观呈现空间分布与步行距离，大幅缩短找店决策路径。</span></div><div class="campus-scene-card"><b>校园语境过滤</b><span>围绕<span style="color: #FF5722; font-weight: 600;">考试周、社团聚餐、深夜续航、预算与学生优惠</span>等真实高校需求构建筛选矩阵，精准匹配当下就餐语境。</span></div><div class="campus-scene-card"><b>轻量推荐入口</b><span>集成<span style="color: #FF5722; font-weight: 600;">AI 助手对话、心情推荐与随机抽签</span>模式，提供趣味化轻推荐，彻底帮助用户摆脱选择困难。</span></div><div class="campus-github-row"><a href="https://github.com/JadenShaguo/Campus-Food-Map" target="_blank" class="github-pill-button">GitHub: JadenShaguo/Campus-Food-Map</a><span class="campus-github-tip">点击查看作品</span></div></div></div>
 </section>
 <section id="page-7" class="slide techprazzi-slide" data-title="TechPrazzi" data-note="TechPrazzi 展示信息产品与 AI Agent 情报流能力：它把公开博客、播客、X 动态和产品发布整理成可订阅、可评分、可个性化的摘要，让用户少看二手噪音，多看一手信号。">
   <div class="progress"><span></span></div>
   <div class="head techprazzi-head edit-unit"><div><div class="eyebrow">PUBLIC PRODUCT 03 / TECHPRAZZI</div><h2>TechPrazzi 科技狗仔：把公开 AI 信号变成可订阅的情报流</h2></div><p>它盯住一线人物、顶级 AI 播客、官方博客和产品动态，把碎片信息按 signal score、兴趣画像和摘要模板整理成每日或每周推送。</p></div>
   <div class="techprazzi-two-column-layout techprazzi-page-container main-content-wrapper edit-unit">
     <div class="left-media-column techprazzi-media-column">
-      <button class="techprazzi-image-card img-preview-card map-shot techprazzi-report-shot" type="button" data-full="assets/media-05-5f802b64fd0ac9d4.svg"><img src="assets/media-05-5f802b64fd0ac9d4.svg" alt="TechPrazzi 项目输出结果截图"></button>
+      <button class="techprazzi-image-card img-preview-card map-shot techprazzi-report-shot" type="button" data-full="index-assets-extract/asset-05-db1fea119e.svg"><img src="index-assets-extract/asset-05-db1fea119e.svg" alt="TechPrazzi 项目输出结果截图"></button>
     </div>
     <div class="right-content-column techprazzi-content-column">
       <div class="techprazzi-card"><b>信号来源</b><span class="card-desc">覆盖<span style="color: #FF5722; font-weight: 600;">顶级 AI 播客、精选 AI 一线人物、Anthropic Engineering、Claude Blog</span> 等公开开源。</span></div>
       <div class="techprazzi-card"><b>处理流程</b><span class="card-desc">中心化 Feed 每日更新，Agent 拉取 Feed 后计算 <span style="color: #FF5722; font-weight: 600;">signalScore、signalTags、signalReasons 与 signalRadar</span>。</span></div>
       <div class="techprazzi-card"><b>摘要结构</b><span class="card-desc">用 <span style="color: #FF5722; font-weight: 600;">TL;DR、SIGNAL HUNT、Why it matters、WATCH NEXT</span> 分层呈现结论、证据和后续方向。</span></div>
       <div class="techprazzi-card"><b>推送形式与项目价值</b><span class="card-desc">按 agents、developer tools、infrastructure 等兴趣画像重排重点；<span style="color: #FF5722; font-weight: 600;">轻量通讯风格输出，保留原始链接与可追溯判断</span>。</span></div>
-      <div class="github-pill">GitHub: JadenShaguo/techprazzi</div>
+      <div class="techprazzi-github-row"><div class="github-pill">GitHub: JadenShaguo/techprazzi</div><span class="techprazzi-github-tip">点击查看作品</span></div>
     </div>
   </div>
 </section>
@@ -2207,7 +2487,7 @@
       <div class="deck-feature-card"><b>可保存</b><span>轻量 <span class="highlight">Python 服务</span>把浏览器编辑结果原子写入源码文件。</span></div>
       <div class="deck-feature-card"><b>可验收</b><span>检查控件、资源、<span class="highlight">viewBox、页面元数据</span>和自包含性。</span></div>
     </div>
-    <div class="github-pill">GitHub: JadenShaguo/html-deck-studio</div>
+    <div class="deck-studio-github-row"><div class="github-pill">GitHub: JadenShaguo/html-deck-studio</div><span class="deck-studio-github-tip">点击查看作品</span></div>
   </div>
 
 </section>
@@ -2229,8 +2509,8 @@
   <div class="head ai-workbench-head edit-unit"><div><div class="eyebrow">INTERNAL CASE</div><h2>AI 教学工作台 MVP：围绕错题形成可复练闭环</h2></div><p>本地教学工作台面向错题诊断、相似题推荐、变式训练、AI 讲解、AI 判题和学习计划。基础数据能力可离线运行，AI 能力按配置增强。</p></div>
   <div class="ai-workbench-layout edit-unit">
     <div class="left-media-column ai-workbench-media-column">
-      <button class="media-card workbench-image-card map-shot" type="button" data-full="assets/media-06-50f6a8c75a717ee0.svg"><img src="assets/media-06-50f6a8c75a717ee0.svg" alt="AI 教学工作台 MVP 截图"><span class="media-badge">点击查看大图</span></button>
-      <div class="media-card video-card-wrapper workbench-video-card workbench-video-thumb" onclick="openMediaModal('video')" role="button" tabindex="0" data-video-src="assets/media-07-fab9f61dc7edeb44.mp4"><video src="assets/media-07-fab9f61dc7edeb44.mp4" poster="assets/media-06-50f6a8c75a717ee0.svg" preload="metadata" muted playsinline controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none; border-radius: 12px;"></video><span class="media-badge">点击查看视频</span></div>
+      <button class="media-card workbench-image-card map-shot" type="button" data-full="index-assets-extract/asset-06-bb7ac76937.svg"><img src="index-assets-extract/asset-06-bb7ac76937.svg" alt="AI 教学工作台 MVP 截图"><span class="media-badge">点击查看大图</span></button>
+      <div class="workbench-video-column"><div class="media-card video-card-wrapper workbench-video-card workbench-video-thumb" onclick="openMediaModal('video')" role="button" tabindex="0" data-video-src="index-assets-extract/asset-07-7baea06c07.mp4"><video src="index-assets-extract/asset-07-7baea06c07.mp4" poster="index-assets-extract/asset-06-bb7ac76937.svg" preload="metadata" muted playsinline controlsList="nodownload" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none; border-radius: 12px;"></video><span class="media-badge">点击查看视频</span></div><div class="workbench-video-load-hint">受网络影响，加载需稍等</div></div>
     </div>
     <div class="right-content-column ai-workbench-content-column">
       <span class="section-kicker">内部能力型项目</span>
@@ -2247,8 +2527,8 @@
   <div class="head mistakemate-head edit-unit"><div><div class="eyebrow">INTERNAL CASE</div><h2>MistakeMate：把错题本变成学习搭子</h2></div><p>定位不是静态错题本，而是围绕“错题之后该做什么”搭建的本地 Demo：薄弱点识别、推荐练习、AI 讲解、AI 批改和短周期计划。</p></div>
   <div class="mistakemate-layout edit-unit">
     <div class="left-media-column mistakemate-media-column">
-      <button class="media-card mistakemate-image-card map-shot" type="button" data-full="assets/media-08-d99570a5ba2baa16.png"><img src="assets/media-08-d99570a5ba2baa16.png" alt="MistakeMate 运行截图"><span class="media-badge">点击查看大图</span></button>
-      <div class="media-card video-card-wrapper mistakemate-video-card mistakemate-video-thumb" onclick="openMediaModal('video')" role="button" tabindex="0" data-video-src="assets/media-09-b5dffdf5d9c2d582.mp4"><video src="assets/media-09-b5dffdf5d9c2d582.mp4" poster="assets/media-10-2e2031f13c34b5ea.png" preload="metadata" muted playsinline style="width: 100%; height: 100%; object-fit: cover; pointer-events: none; border-radius: 12px;"></video><span class="media-badge">点击查看视频</span></div>
+      <button class="media-card mistakemate-image-card map-shot" type="button" data-full="index-assets-extract/asset-08-616c5fe686.png"><img src="index-assets-extract/asset-08-616c5fe686.png" alt="MistakeMate 运行截图"><span class="media-badge">点击查看大图</span></button>
+      <div class="mistakemate-video-column"><div class="media-card video-card-wrapper mistakemate-video-card mistakemate-video-thumb" onclick="openMediaModal('video')" role="button" tabindex="0" data-video-src="index-assets-extract/asset-09-8d6edbe2fb.mp4"><video src="index-assets-extract/asset-09-8d6edbe2fb.mp4" poster="index-assets-extract/asset-10-6dde38c319.png" preload="metadata" muted playsinline style="width: 100%; height: 100%; object-fit: cover; pointer-events: none; border-radius: 12px;"></video><span class="media-badge">点击查看视频</span></div><div class="mistakemate-video-load-hint">受网络影响，加载需稍等</div></div>
     </div>
     <div class="right-content-column mistakemate-content-column">
       <div class="mistakemate-flow-card"><b>1. 错题记录</b><span>读取学生真实错题和本地题库数据，<span class="highlight">自动萃取题干、考点与答错归因</span>。</span></div>
@@ -2292,8 +2572,8 @@
       </div>
     </div>
     <div class="right-media-column">
-      <button class="media-card sql-assistant-card map-shot" type="button" data-full="assets/media-11-d4e4b76c4bcac87e.png">
-        <img src="assets/media-11-d4e4b76c4bcac87e.png" alt="数据表 SQL 助手 Web 界面截图">
+      <button class="media-card sql-assistant-card map-shot" type="button" data-full="index-assets-extract/asset-11-bd5a3ee86a.png">
+        <img src="index-assets-extract/asset-11-bd5a3ee86a.png" alt="数据表 SQL 助手 Web 界面截图">
         <span class="media-badge">点击查看大图</span>
       </button>
       <div class="sql-value-card"><b>从“猜测字段”到“元数据预体检”</b><span>针对 JSON / 日志等复杂半结构化字段，<span class="highlight">先做小样本采样与路径验证</span>，从源头消除口径误判与 SQL 报错风险。</span></div>
