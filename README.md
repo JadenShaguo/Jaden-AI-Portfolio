@@ -1,2 +1,2 @@
-# Jaden-s-AI-Portfolio
+# Jaden-AI-Portfolio
 Jaden's AI Portfolio
